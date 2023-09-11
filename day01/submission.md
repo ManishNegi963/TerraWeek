@@ -92,6 +92,24 @@ Ecosystem: Terraform has a vibrant ecosystem with a vast community, extensive do
 
   ## Setting up environment for AWS
 
+ - Create IAM user to setup with admin access.
+
+  <img width="989" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/8eb61b47-cd24-4b0d-975c-8ace9927c46c">
+
+  - INstall awscli.
+
+            sudo apt install awscli
+
+    <img width="513" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/5f35aee1-d25b-4e89-b344-753c17c25ec0">
+
+
+- configure Aws.
+
+          aws configure
+
+  <img width="422" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/f48da46a-0efe-4f67-8580-c922371e27b8">
+
+
 - Create a file terraform.tf
 
       vim terraform.tf

@@ -114,8 +114,70 @@ Ecosystem: Terraform has a vibrant ecosystem with a vast community, extensive do
 
       vim terraform.tf
 
+  <img width="441" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/f0d1e639-7b22-431f-800f-49e5439fe101">
 
-- Explain the important terminologies of Terraform with the example at least (5 crucial terminologies).
+- Initialize terraform to install the aws plugins
+
+        terraform init
+
+  <img width="600" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/debfd740-06d2-417f-890c-389055db3182">
+
+
+  # Explain the important terminologies of Terraform with the example at least (5 crucial terminologies).
+
+ - Resource:
+
+A resource is a single, manageable item in your infrastructure, such as a virtual machine, a network, or a database. In Terraform, resources represent the infrastructure components you want to create, manage, or delete.
+Example: Creating an AWS EC2 instance as a resource:
+
+        resource "aws_instance" "example" {
+          ami           = "ami-0c55b159cbfafe1f0"
+          instance_type = "t2.micro"
+        }
+
+- Provider:
+A provider is a plugin that terraform uses to create and manage resources.
+
+Example: Aws provider.
+
+        terraform {
+          required_providers {
+                      aws = {
+                        source = "hashicorp/aws"
+                        version = "~> 5.0"
+                      }
+          }
+        }
+
+- Module:
+
+A module is a reusable, self-contained collection of Terraform configurations that represent a set of related resources. Modules can be used to encapsulate infrastructure components and promote code reusability.
+Example: Defining a simple module for creating a web server:
+
+        module "web_server" {
+          source = "./modules/web"
+          instance_count = 2
+          instance_type = "t2.micro"
+        }
+
+- Variable
+  It holds all the variables.
+  Example: Declaring a variable for the AWS region:
+
+           variable "aws_region" {
+          description = "The AWS region for resources"
+          type        = string
+          default     = "us-west-2"
+        }
+        
+- Output:
+  Outputs in Terraform allow you to define values that you want to expose from your infrastructure configurations. These values can be useful for displaying information, passing data to other systems, or sharing outputs with other Terraform modules.
+Example: Defining an output for the public IP address of an AWS EC2 instance:
+
+        output "instance_public_ip" {
+          value = aws_instance.example.public_ip
+        }
+
 
 Attach code snippets and steps wherever necessary and post your learnings on LinkedIn
 

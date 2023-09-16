@@ -63,6 +63,9 @@ Create main.tf
       
       }
 
+<img width="373" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/92fa0399-0c83-4bcc-b737-e3fb088e3585">
+
+
 
 
 ## Task 3: 
@@ -115,6 +118,9 @@ Module Versioning: Terraform modules can have different versions, just like soft
             
             }
   
+
+<img width="318" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/0f21c57c-4ad3-46a4-b439-d45580aa2cca">
+
 
 <br>
 Attach code snippets and steps wherever necessary and post your learnings on LinkedIn with #TerraWeek tag.

@@ -87,7 +87,8 @@ Module Versioning: Terraform modules can have different versions, just like soft
 - What are the ways to **lock Terraform module versions**? Explain with code snippets.
 
 - Using the LockID in dynamodb table to lock the version in remote state
-  <img width="227" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/5a9aabd0-3172-4515-af48-41755cbbc8d7">
+  
+<img width="227" alt="image" src="https://github.com/ManishNegi963/TerraWeek/assets/124788172/5a9aabd0-3172-4515-af48-41755cbbc8d7">
 
             provider "aws" {
                     region = "us-east-1"
